@@ -24,6 +24,7 @@ ul, ol {
     padding: 0 15px;
     margin: 0 auto;
 }
+
 /* *header started */
 
 header {
@@ -33,7 +34,7 @@ header {
     top: 0;
     padding: 15px 0;
     z-index: 999;
-    background: rgba(243, 20, 20, 0.1);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .nav {
@@ -70,6 +71,85 @@ header {
 /* *header finished */
 
 /* *main started */
+section {
+    padding: 100px 0;
+}
+
 /*? hero__section started */
+.hero {
+    min-height: 100vh;
+    background: url("../images/bg.png") no-repeat center / cover fixed;
+}
+
+.hero__title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.hero__title span {
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.animated-text {
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+}
+
+.animated-text h3 {
+    color: crimson;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+
+.animated-text h3:nth-child(1) {
+    animation: text-movie 10s infinite;
+}
+
+.my__work-btn {
+    color: #ffffff;
+    background: crimson;
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 25px 0;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: 0.3s ease-in;
+}
+
+.my__work-btn:hover {
+    color: #000;
+    background: white;
+}
+
 /*? hero__section finished */
 /* *main finished */
+
+/* *@keyframes started */
+@keyframes text-movie {
+    0% {
+        margin-top: 0;
+    }
+    25% {
+        margin-top: -70px;
+    }
+
+    50% {
+        margin-top: -140px;
+    }
+
+    75% {
+        margin-top: -70px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+/* *@keyframes finished */

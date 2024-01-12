@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* *Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -12,5 +13,63 @@ a {
 }
 
 ul, ol {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* *header started */
+
+header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 15px 0;
+    z-index: 999;
+    background: rgba(243, 20, 20, 0.1);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    /*position: relative;*/
+}
+
+.nav__link {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.5s ease-in;
+}
+
+.nav__link:hover {
+    color: crimson;
+}
+
+/* *header finished */
+
+/* *main started */
+/*? hero__section started */
+/*? hero__section finished */
+/* *main finished */

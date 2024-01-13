@@ -246,6 +246,142 @@ section {
     object-fit: cover;
 }
 
+.skills {
+    background: #000016;
+}
+
+.skills .content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.skills .content__title, .skills .column p {
+    margin-bottom: 20px;
+}
+
+.skills .col-left {
+    position: relative;
+    width: 45%;
+}
+
+.skills .col-right {
+    position: relative;
+    width: 45%;
+}
+
+.skills .col-right .bar {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.skills .col-right .bar .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skills .info span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skills .line {
+    position: relative;
+    width: 100%;
+    height: 15px;
+    background: #ccc;
+    border-radius: 2px;
+}
+
+.skills .line::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.skills .html::before {
+    width: 95%;
+    background: orange;
+}
+
+.skills .css::before {
+    width: 85%;
+    background: lime;
+}
+
+.skills .js::before {
+    width: 80%;
+    background: dodgerblue;
+}
+
+.skills .jquery::before {
+    width: 85%;
+    background: crimson;
+}
+
+.skills .php::before {
+    width: 80%;
+    background: darkkhaki;
+}
+
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.title p {
+    width: 80%;
+}
+
+.services .content .card {
+    background: #fff;
+    width: 300px;
+    margin: 10px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+}
+
+.services .card .service-icon {
+    color: crimson;
+    font-size: 120px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+}
+
+.services .card .service-icon:hover {
+    transform: translateY(-10px);
+}
+
+.services .card .info {
+    text-align: center;
+}
+
+.services .card .info h3 {
+    color: crimson;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
 
 @keyframes text-movie {
     0% {

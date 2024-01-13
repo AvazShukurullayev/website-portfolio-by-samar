@@ -581,11 +581,11 @@ footer p {
         padding: 12px 20px;
     }
 
-     .nav__list {
+    .nav__list {
         display: none;
     }
 
-     .nav__burger {
+    .nav__burger {
         position: relative;
         background: url("../images/menu.png") no-repeat center / 30px;
         width: 40px;
@@ -596,7 +596,7 @@ footer p {
         transition: 0.2s ease-in;
     }
 
-     .nav__link {
+    .nav__link {
         color: #111;
         margin: 10px;
         font-size: 22px;
@@ -617,7 +617,7 @@ footer p {
         filter: invert(1);
     }
 
-     .nav__list.active {
+    .nav__list.active {
         z-index: 998;
         position: fixed;
         background: #fff;
@@ -679,4 +679,42 @@ footer p {
         padding: 35px 40px;
     }
 
+}
+
+
+.scrollToTop-btn {
+    position: fixed;
+    z-index: 999;
+    background: crimson;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    right: 0;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    line-height: 45px;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.scrollToTop-btn.active {
+    right: 10px;
+    opacity: 1;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
